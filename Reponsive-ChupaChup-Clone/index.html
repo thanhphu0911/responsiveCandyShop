@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <title>CHUPA CHUPS</title>
+  <link rel="icon" type="image/x-icon" href="pics/logo.svg">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ 
+  <nav> 
+    <img src = "pics/logo.svg" alt="ChupaChups-SVG"/>
+   <ul class="menu">
+     <a href="index.html">Home</a>
+     <a>Products</a>
+     <a>About Us</a>
+     <a>Contact</a>
+   </ul>
+    <div class="toggleMenu"
+      onclick="document.querySelector('.menu').classList.toggle('active')">
+      <i class="fa fa-bars fa-xl"></i>
+    </div>
+  </nav>
+
+
+  
+  <div class="list">
+    <div class="item">
+      <img src = "pics/item1.webp" alt="ChupaChups1"/>
+      <div class="content">
+          <div>Best of Creamy</div>
+          <div>Your favourite flavours, all in one place! The five most iconic flavours.</div>  
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src = "pics/item2.webp" alt="ChupaChups2"/>
+      <div class="content">
+          <div>Best of Mini</div>
+          <div>The ultimate mix of the most loved flavours, in a super cute mini size.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src = "pics/item3.webp" alt="ChupaChups3"/>
+      <div class="content">
+          <div>Chupa Surprise</div>
+          <div>Enjoy a Classic Chupa Chup and receive a surprise Minion toy.  Collect all 12!</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src = "pics/item4.webp" alt="ChupaChups4"/>
+      <div class="content">
+          <div>XXL Trio</div>
+          <div>Want a really, really big lollipop with a big burst of bubblegum inside? Look no further!</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>Our Story</h2>
+        <div class="foot-content">
+          <p>Chupa Chups Inventor Enric Bernat thought, do you know what the world needs? The world needs a product that "would be like eating a sweet with a fork". And with that, he brought us the first ever lollipop.</p>
+
+          <div class="social">
+            <a href="#"><span class="fa-brands fa-facebook"></span></a>
+            <a href="#"><span class="fa-brands fa-twitter"></span></a>
+            <a href="#"><span class="fa-brands fa-instagram"></span></a>
+            <a href="#"><span class="fa-brands fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center box">
+        <h2>Address</h2>
+        <div class="foot-content">
+          <div class="place">
+            <span class="fa fa-map-marker-alt"></span>
+            <span class="text"> 1234 Anywhere Str, AnyCity</span>
+          </div>
+
+          <div class="phone">
+            <span class="fa fa-phone-alt"></span>
+            <span class="text"> (+1) 234-567-8901</span>
+          </div>
+
+          <div class="email">
+            <span class="fa fa-envelope"></span>
+            <span class="text"> abc@example.com</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class=" right box">
+        <h2>Contact Us</h2>
+        <div class="foot-content">
+          <form action="#">
+            <div class="email-box">
+              <div class="text">Email *</div>
+              <input type="email" required>
+            </div>
+
+            <div class="msg">
+              <div class="text">Message *</div>
+              <textarea rows="3" cols="30" required></textarea>
+            </div>
+
+            <div class="btn">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

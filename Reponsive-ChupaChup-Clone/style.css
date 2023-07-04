@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    background-image: linear-gradient(315deg, #f44d37 23%, #f87a30 49%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  nav img{
+    width: 120px;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  
+  nav ul a {
+    color : #ffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  a:hover{
+    color: yellow;
+    transition: 0.5s;
+  }
+  
+  .item img{
+    width: 80%;
+    transition: 0.5s;
+  }
+  
+  .list{
+    display: flex;
+    min-height:100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .item{
+    background-image: linear-gradient(315deg, #cad76d 66%, #bccf67 34%);
+    background-attachment: fixed;
+    margin: 30px;
+    height: 350px;
+    width: 300px;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item .content{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .item .content div{
+    color: #fff;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .item:hover img{
+    transform: translate(0, -30px) rotate(20deg) scale(1.4);
+  }
+  
+  .content{
+    background-color: #a0b454;
+  }
+  .content div:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .content div:nth-child(2){
+    margin: 10px auto;
+  }
+  
+  footer{
+    bottom: 0px;
+    width: 100%;
+    background-color: #f0044c;
+    color: white;
+  }
+  
+  .main-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+    
+  }
+  
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .box .foot-content{
+    margin-top: 20px;
+  }
+  
+  .left .foot-content .social{
+    margin-top: 20px;
+  }
+  
+  .phone, .email{
+    margin-top:20px;
+  }
+  
+  .msg, .email-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  button{
+    border:none; 
+    border-radius: 20px;
+    min-height:30px; 
+    min-width: 120px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button:hover {
+      background-color:#111;
+      transition: 0.7s;
+    color: white;
+    }
+  .left .foot-content .social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 50%;
+  }
+  
+  .left .foot-content .social a span{
+    font-size:18px;
+    color: black;
+    opacity: 0.9s;
+  }
+  
+  .foot-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .left .foot-content .social a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+  
+  .left .foot-content .social a:hover span{
+    color: white;
+    transition: 0.5s;
+  }
+  .toggleMenu{
+    display:none;
+  }
+  
+  /* MEDIA QUERIES */
+  @media screen and (max-width:767px){
+  
+    .item:hover img{
+    transform: translate(0, -30px) rotate(20deg) scale(1.1);
+  }
+    
+    .main-content{
+      display: block;
+    }
+  
+    .left-box, .center-box{
+      margin-bottom: 10px;
+    }
+  
+    footer{
+      margin-top: 20px;
+    }
+    nav{
+      position: fixed;
+      padding: 20px;
+      z-index: 5;
+      background: #ffffff4D;
+      width: 100%;
+    }
+  
+    nav img {
+      width: 80px;
+    }
+  
+    nav .menu{
+      position: fixed;
+      left: 0;
+      top: 0;
+      height:100%;
+      background-color: #ffffff4D;
+      backdrop-filter: blur(20px);
+      z-index: 6;
+      text-align: left;
+      width: 80%;
+      transition: 0.5s;
+      transform: translate(-100%);
+    }
+    nav .menu.active{
+      transform: translate(0);
+    }
+    nav .menu a{
+      display: block;
+      padding: 20px;
+    }
+  
+    .toggleMenu{
+      text-align: right;
+      display: block;
+      text-shadow: 0 0 5px #000;
+    }
+  }
